@@ -1,6 +1,6 @@
 <?php
 
-$serverName = "studenti.sum.ba";
+$serverName = "https://studenti.sum.ba/phpmyadmin";
 $dBUsername = "fpmoz242021";
 $dBPassword = "csdigital2021";
 $dBName = "krojacki_studio";
