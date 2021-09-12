@@ -1,0 +1,42 @@
+<?php
+    session_start();
+    include_once 'includes/head.inc.php';
+    include_once 'includes/nav.inc.php';
+    include_once 'includes/sidenav.inc.php';
+
+    require_once 'includes/dbh.inc.php';
+
+
+    $id = $_GET['editUloga'];
+
+    $sql = "SELECT * FROM uloga WHERE id=$id;";
+    $result = mysqli_query($conn, $sql);
+    $row=mysqli_fetch_assoc($result);
+    $idd = $row['id'];
+    $naziv = $row['naziv'];
+
+
+?>
+
+<div class="korisnik">
+    <form action="includes/edit.inc.php" method="post">
+    <div class="mb-3">
+            <input type="hidden" class="form-control" value="<?php echo $idd; ?>" name="id" required>
+        </div>
+        <div class="mb-3">
+            <label>Naziv uloge:</label>
+        </div>
+        <div class="mb-3">
+            <input type="text" class="form-control" value="<?php echo $naziv; ?>" name="naziv" required>
+        </div>
+        <div class="mb-3">
+            <button type="submit" class="btn btn-primary" name="editU">Spremi</button> 
+        </div> 
+    </form>
+</div>
+
+<?php
+
+include_once 'includes/footer.inc.php';
+   
+?>  
