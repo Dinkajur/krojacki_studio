@@ -1,8 +1,8 @@
 <?php
 
-$serverName = "localhost";
-$dBUsername = "root";
-$dBPassword = "";
+$serverName = "studenti.sum.ba";
+$dBUsername = "fpmoz242021";
+$dBPassword = "csdigital2021";
 $dBName = "krojacki_studio";
 
 $conn = mysqli_connect($serverName, $dBUsername, $dBPassword, $dBName);
