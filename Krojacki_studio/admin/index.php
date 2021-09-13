@@ -1,9 +1,10 @@
 <?php
     session_start();
+    include_once 'includes/dbh.inc.php';
     include_once 'includes/head.inc.php';
     include_once 'includes/nav.inc.php';
     include_once 'includes/sidenav.inc.php';
-    include_once 'includes/dbh.inc.php';
+    
 
 ?>
         
