@@ -11,7 +11,7 @@
                 <div class="col-lg-4 text-lg-end">
                <?php if(isset($_SESSION["id"])){
                     $id = $_SESSION["id"];
-                    echo '<a class="link-light text-decoration-none me-3"  href="admin/index.php">Admin</a>';
+                    echo '<a class="link-light text-decoration-none me-3"  href="admin/includes/checkadmin.inc.php?admin='.$id.'">Admin</a>';
                 } 
 
                 
