@@ -1,6 +1,6 @@
 <?php 
 
-include_once 'dbh.inc.php';
+include 'dbh.inc.php';
 
 $id = $_GET['admin'];
 
