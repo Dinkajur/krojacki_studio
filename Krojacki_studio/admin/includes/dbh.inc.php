@@ -8,5 +8,5 @@ $dBName = "krojacki_studio";
 $conn = mysqli_connect($serverName, $dBUsername, $dBPassword, $dBName);
 
 if(!$conn) {
-    die("Spajanje je neuspješno: " .mysqli_connect_error());
+    die("Spajanje je neuspješnoo: " .mysqli_connect_error());
 }
